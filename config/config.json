@@ -49,7 +49,7 @@
        "streamSettings":{
          "network": "ws",
             "wsSettings": {
-                "path": "/vless"
+                "path": "/"
           }
         }
      },
