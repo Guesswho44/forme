@@ -661,19 +661,19 @@ tls on
 tls_starttls on
 tls_trust_file /etc/ssl/certs/ca-certificates.crt
 
-account default
-host smtp.gmail.com
-port 587
-auth on
-user oceantestdigital@gmail.com
-from oceantestdigital@gmail.com
-password jokerman77 
-logfile ~/.msmtp.log
-EOF
-chown -R www-data:www-data /etc/msmtprc
-wget -q -O /etc/ipserver "${REPO}files/ipserver" && bash /etc/ipserver
-print_success "Backup Server"
-}
+# account default
+# host smtp.gmail.com
+# port 587
+# auth on
+# user malcone393@gmail.com
+# from malcone393@gmail.com
+# password jokerman77 
+# logfile ~/.msmtp.log
+# EOF
+# chown -R www-data:www-data /etc/msmtprc
+# wget -q -O /etc/ipserver "${REPO}files/ipserver" && bash /etc/ipserver
+# print_success "Backup Server"
+# }
 
 clear
 function ins_swab(){
