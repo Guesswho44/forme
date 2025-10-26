@@ -929,7 +929,17 @@ clear
     pasang_ssl
     install_xray
     ssh
-    udp_mini
+	
+    # =========================================
+    # INSTALL SSH WEBSOCKET (SSHWS)
+    # =========================================
+    print_install "Memasang SSH WebSocket"
+    wget -q -O /usr/local/bin/sshws "${REPO}files/sshws.sh" >/dev/null 2>&1
+    chmod +x /usr/local/bin/sshws
+    bash /usr/local/bin/sshws
+    print_success "SSH WebSocket telah dipasang"
+    
+	udp_mini
     ssh_slow
     ins_SSHD
     ins_dropbear
