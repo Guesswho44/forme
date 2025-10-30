@@ -599,7 +599,7 @@ clear
 print_install "Menginstall Dropbear"
 # // Installing Dropbear
 apt-get install dropbear -y > /dev/null 2>&1
-wget -q -O /etc/default/dropbear "${REPO}config/dropbear.conf"
+wget -q -O /etc/default/dropbear "https://raw.githubusercontent.com/FN-Rerechan02/tools/main/dropbear.sh"
 chmod +x /etc/default/dropbear
 /etc/init.d/dropbear restart
 /etc/init.d/dropbear status
